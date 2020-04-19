@@ -1,0 +1,52 @@
+.ingredients {
+
+  &-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    background: url(../img/images/ing-bg.jpg) center no-repeat;
+    background-size: cover;
+  }
+
+  &-content {
+    width: 50%;
+    margin-left: auto;
+    padding: 83px 70px 77px;
+    background-color: rgba(0, 0, 0, .5);
+
+    &__subtitle {
+      margin-top: 30px;
+      padding: 0 10px;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-evenly;
+
+      margin-top: 70px;
+    }
+
+    &__item {
+      width: 110px;
+      height: 110px;
+
+      background: #000;
+      border: 5px solid rgba(0, 0, 0, .3);
+      border-radius: 50%;
+
+      background-clip: content-box;
+      background-position: center;
+      background-size: cover;
+
+      &:nth-child(1) {
+        background-image: url(../img/images/ing-1.jpg);
+      }
+      &:nth-child(2) {
+        background-image: url(../img/images/ing-2.jpg);
+      }
+      &:nth-child(3) {
+        background-image: url(../img/images/ing-3.jpg);
+      }
+    }
+  }
+}

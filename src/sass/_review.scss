@@ -1,0 +1,50 @@
+.review {
+  &-section {
+    background: url(../img/images/review-bg.jpg) center no-repeat;
+    background-size: cover;
+
+    padding: 100px 0px;
+  }
+
+  &-content {
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    padding: 80px 70px;
+    flex-basis: 66%;
+    background-color: rgba(0, 0, 0, .8);
+
+    &__text {
+      position: relative;
+      margin-top: 27px;
+
+      @include font-gentium;
+      font-size: 25px;
+      color: #dde0df;
+      text-align: center;
+
+      &::before {
+        content: '“';
+        
+        position: absolute;
+        left: 8px;
+        top: -40px;
+        transform: translateX(-100%);
+
+        font-family: serif;
+        color: #9a9c9b;
+        font-size: 96px;
+      }
+    }
+
+    &__author {
+      margin-top: 45px;
+      @include font-lato;
+      font-size: 18px;
+      color: #ffffff;
+      text-align: center;
+    }
+  }
+}

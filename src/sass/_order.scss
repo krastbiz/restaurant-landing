@@ -1,0 +1,49 @@
+.order {
+
+  &-section {
+    padding: 100px 0px;
+    background: url(../img/images/order-bg.jpg) center no-repeat;
+    background-size: cover;
+  }
+  &-content {
+    &-wrapper {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &-cta {
+      flex-basis: 40%;
+
+      &__text {
+        margin-top: 32px;
+      }
+
+      &__subtext {
+        margin-top: 20px;
+      }
+
+      &__form {
+        margin-top: 45px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      &__inputs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      
+    }
+
+    &-images {
+      display: flex;
+      justify-content: space-between;
+
+      img:first-child {
+        margin-right: 30px;
+      }
+    }
+  }
+}
